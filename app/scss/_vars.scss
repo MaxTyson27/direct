@@ -2,6 +2,20 @@
 $accent: #FFDF60;
 $bl: #F0F6FF;
 
+
+%unit-h5{
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    left: -46px;
+    top: -12px;
+    width: 30px;
+    height: 52px;
+    background-image: url('../images/unit-one/arrow.svg');
+  }
+}
+
 %red-400{
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 400;
@@ -17,6 +31,13 @@ $bl: #F0F6FF;
   font-weight: 700;
 }
 
+
+@mixin bgp($url, $s, $pos1, $pos2 ) {
+  background-repeat: no-repeat;
+  background-image: url($url);
+  background-size: $s;
+  background-position: $pos1 $pos2;
+}
 
 @mixin bg($url, $s) {
   background-repeat: no-repeat;
@@ -64,4 +85,17 @@ $bl: #F0F6FF;
   url($url1) format('woff2'),
   url($url2) format('woff');
   font-display: swap;
+}
+
+
+%link{
+  background-color: $accent;
+  width: 270px;
+  height: 55px;
+  display: block;
+  @include flex-center;
+  font-size: 20px;
+  line-height: 23px;
+  @extend %ub-700;
+  border-radius: 30px;
 }

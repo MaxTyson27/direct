@@ -48,7 +48,8 @@ h6{
   @extend %ub-700;
 }
 
-.input-phone{
+.input-phone,
+.input-name{
   width: 257px;
   height: 55px;
   background: rgba(145, 145, 145, 0.2);
@@ -82,4 +83,25 @@ h6{
 .policy{
   font-size: 12px;
   line-height: 14px;
+}
+
+.step-content{
+  max-width: 840px;
+  margin: 0 auto;
+  p{
+    margin-bottom: 15px;
+  }
+  h2{
+    margin-bottom: 20px;
+  }
+  h5{
+    margin-bottom: 15px;
+    @extend %unit-h5;
+    span{
+      color: #B6B6B6;
+    }
+  }
+  img{
+    margin-bottom: 15px;
+  }
 }
