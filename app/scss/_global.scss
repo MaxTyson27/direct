@@ -42,6 +42,12 @@ h5{
   @extend %ub-700;
 }
 
+h6{
+  font-size: 20px;
+  line-height: 23px;
+  @extend %ub-700;
+}
+
 .input-phone{
   width: 257px;
   height: 55px;
