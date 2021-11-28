@@ -19,5 +19,8 @@
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.5.1",
     "sass": "^1.43.4"
+  },
+  "dependencies": {
+    "inputmask": "^5.0.6"
   }
 }

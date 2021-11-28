@@ -7,7 +7,15 @@
 
 .header{
   margin-bottom: 78px;
+  padding-top: 72px;
   &__top{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
+    padding-bottom: 10px;
     &-inner{
       padding-top: 7px;
       display: flex;
@@ -633,11 +641,11 @@
 
 
 .form-three{
-  padding: 75px 0;
+  padding-top: 75px;
   background-color: $bl;
   margin-bottom: 75px;
-  @include bg('../images/form-three.png', auto);
-    background-position: right 120px top 130px;
+  // @include bg('../images/form-three.png', auto);
+    // background-position: right 120px top 130px;
   &__title{
     max-width: 827px;
     margin-bottom: 13px;
@@ -662,7 +670,8 @@
     margin-left: 20px;
   }
   &__image{
-    display: none;
+    // display: none;
+    transform: translateY(-85px);
   }
 }
 
@@ -1123,10 +1132,31 @@
 .form-four{
   background-color: $bl;
   padding: 75px 0;
-  @include bgp('../images/form-four-rocket.svg', 308px, bottom, left);
+  // @include bgp('../images/form-four-rocket.svg', 308px, bottom, left);
   margin-bottom: 75px;
   &__inner{
-    @include bgp('../images/form-four.svg', 223px, bottom, right);
+    // @include bgp('../images/form-four.svg', 223px, bottom, right);
+  }
+  &__content{
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 308px;
+      height: 350px;
+      background-image: url('../images/form-four-rocket.svg');
+      left: -110px;
+      top: 0;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      width: 223px;
+      height: 223px;
+      background-image: url('../images/form-four.svg');
+      right: -90px;
+      top: 80px;
+    }
   }
   &__title{
     max-width: 921px;
@@ -1347,12 +1377,15 @@
 
 .form-six {
   padding:75px 0;
-  @include bgp('../images/form-six.svg', 334px, center, right 110px);
+  // @include bgp('../images/form-six.svg', 334px, center, right 110px);
   &__title {
     max-width: 784px;
     margin-bottom: 25px;
   }
-
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
   &__subtitle {
     margin-bottom: 20px;
   }
@@ -1411,20 +1444,24 @@
 
   &__list {
   }
-
-  &__item {
+  &__list-link{
+    display: block;
     padding-left: 28px;
+  }
+  &__item {
     &:first-child{
-      @extend %ub-700;
-      position: relative;
-      &::before{
-        content: '';
-        position: absolute;
-        left: 0;
-        top: -5px;
-        background-image: url('../images/team/arrow-right.svg');
-        width: 15px;
-        height: 28px;
+      a{
+        @extend %ub-700;
+        position: relative;
+          &::before{
+          content: '';
+          position: absolute;
+          left: 0;
+          top: -5px;
+          background-image: url('../images/team/arrow-right.svg');
+          width: 15px;
+          height: 28px;
+        }
       }
     }
     margin-bottom: 10px;
@@ -1796,6 +1833,68 @@
     line-height: 16px;
     padding-top: 14px;
     color: #BBBBBB;
+  }
+}
+
+.popup-close{
+  background-color: #000;
+  opacity: 0.2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  display: none;
+  &.popup-close--active{
+    display: block;
+  }
+}
+
+.popup{
+  max-width: 500px;
+  position: fixed;
+  padding: 20px;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -200%);
+  background-color: $bl;
+  z-index: 101;
+  border-radius: 20px;
+  transition: all .3s;
+  opacity: 0;
+  &.popup--active{
+    transform: translate(-50%, -50%);
+    transition: all .3s;
+    opacity: 1;
+  }
+  &__close{
+    cursor: pointer;
+  }
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  &__title{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__image{
+    margin-bottom: 15px;
+  }
+  &__form{
+    input{
+      margin: 0 auto 15px;
+      display: block;
+      width: 100%;
+    }
+    button{
+      margin: 0 auto 10px;
+      width: 100%;
+      display: block;
+    }
   }
 }
 

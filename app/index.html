@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Директ.сайт - Настройка рекламы</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/jquery.quiz.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Ubuntu:wght@400;700&display=swap"
@@ -24,18 +25,18 @@
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__list-item">
-                  <a href="#" class="menu__list-link">
+                  <a href="#services" class="menu__list-link">
                     Доп. услуги
                   </a>
-                  <a href="#" class="menu__list-link">
+                  <a href="#price" class="menu__list-link">
                     Тарифы
                   </a>
                 </li>
                 <li class="menu__list-item">
-                  <a href="#" class="menu__list-link">
+                  <a href="#reviews" class="menu__list-link">
                     Отзывы
                   </a>
-                  <a href="#" class="menu__list-link">
+                  <a href="#answer" class="menu__list-link">
                     FAQ
                   </a>
                 </li>
@@ -43,15 +44,15 @@
                   <a href="#" class="menu__list-link">
                     Калькулятор
                   </a>
-                  <a href="#" class="menu__list-link">
+                  <a href="#promo" class="menu__list-link">
                     Акции
                   </a>
                 </li>
                 <li class="menu__list-item">
-                  <a href="#" class="menu__list-link">
+                  <a href="#advance" class="menu__list-link">
                     Портфолио
                   </a>
-                  <a href="#" class="menu__list-link">
+                  <a href="#instructions" class="menu__list-link">
                     Директ самостоятельно
                   </a>
                 </li>
@@ -86,13 +87,13 @@
                 </li>
               </ul>
               <form action="mail.php" method="POST" class="header__form">
-                <input type="text" class="input-phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                <input type="text" class="input-phone" name="phone" placeholder="+7(___) ___-__-__" required>
                 <button class="header__form-btn button" type="submit">
                   Отправить
                 </button>
-                <p class="policy">
+                <a class="policy" href="https://seo.computer/policy.html" target="_blank">
                   Отправляя данные, вы соглашаетесь с Политикой конфиденциальности
-                </p>
+                </a>
               </form>
             </div>
             <div class="header__image">
@@ -374,13 +375,13 @@
               Заполните форму и наш специалист по настройке Яндекс Директ с вами свяжется для дальнейшей консультации!
             </p>
             <form action="mail.php" method="POST" class="form-one__form">
-              <input type="text" name="phone" class="input-phone" placeholder="+7 (___) ___-__-__" required>
+              <input type="text" name="phone" class="input-phone" placeholder="+7(___) ___-__-__" required>
               <button class="button form-one__form-btn">
                 Отправить
               </button>
-              <p class="policy">
+              <a href="https://seo.computer/policy.html" target="_blank" class="policy">
                 Отправляя данные, вы соглашаетесь с Политикой конфиденциальности
-              </p>
+              </a>
             </form>
           </div>
           <img src="images/form-one.png" alt="">
@@ -598,19 +599,19 @@
               Оставьте заявку и наш менеджер перезвонит вам в ближайшее время!
             </p>
             <form method="POST" action="mail.php" class="form-two__form">
-              <input name="phone" type="text" class="form-two__input input-phone" required placeholder="+7 (___) ___-__-__">
+              <input name="phone" type="text" class="form-two__input input-phone" required placeholder="+7(___) ___-__-__">
               <button class="button form-two__btn" type="submit">
                 Отправить
               </button>
-              <p class="policy">
+              <a href="https://seo.computer/policy.html" target="_blank" class="policy">
                 Отправляя данные, вы соглашаетесь с Политикой конфиденциальности
-              </p>
+              </a>
             </form>
           </div>
         </div>
       </div>
     </section>
-    <section class="advance">
+    <section class="advance" id="advance">
       <div class="container">
         <h2 class="advance__title">
           Результаты наших клиентов от рекламы через Яндекс Директ
@@ -1216,20 +1217,20 @@
               Заполните форму и наш специалист по настройке Яндекс Директ с вами свяжется для дальнейшего общения!
             </p>
             <form action="mail.php" class="form-three__form" method="POST">
-              <input name="phone" type="text" class="input-phone" required placeholder="+7 (___) ___-__-__">
+              <input name="phone" type="text" class="input-phone" required placeholder="+7(___) ___-__-__">
               <button class="button form-three__btn" type="submit">
                 Отправить
               </button>
-              <p class="policy">
+              <a href="https://seo.computer/policy.html" target="_blank" class="policy">
                 Отправляя данные, вы соглашаетесь с Политикой конфиденциальности
-              </p>
+              </a>
             </form>
           </div>
           <img class="form-three__image" src="images/form-three.png" alt="">
         </div>
       </div>
     </section>
-    <section class="price">
+    <section class="price" id="price">
       <div class="container">
         <h2 class="price__title">
           Цены на настройку Яндекс Директ в Петропавловск камчатском
@@ -1390,7 +1391,7 @@
         </div>
       </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
       <div class="container">
         <h2 class="services__title">
           Дополнительные услуги
@@ -1465,7 +1466,7 @@
         </div>
       </div>
     </section>
-    <section class="promo">
+    <section class="promo" id="promo">
       <div class="container">
         <h2 class="promo__title">
           Действующие промокоды Яндекс Директ в Петропавловск камчатском
@@ -1679,12 +1680,12 @@
               Просто отправьте заявку и наши специалисты начнут работу!
             </p>
             <form method="post" action="mail.php" class="form-four__form">
-              <input name="name" type="text" class="input-name" required placeholder="Ваше имя">
-              <input name="phone" type="text" class="input-phone" placeholder="+7 (___) ___-__-__" required>
+              <input onkeypress="return /[a-z,а-я]/i.test(event.key)" name="name" type="text" class="input-name" required placeholder="Ваше имя">
+              <input name="phone" type="text" class="input-phone" placeholder="+7(___) ___-__-__" required>
               <button class="button" type="submit">Отправить</button>
-              <p class="policy">
+              <a href="https://seo.computer/policy.html" target="_blank" class="policy">
                 Отправляя данные, вы соглашаетесь с Политикой конфиденциальности
-              </p>
+              </a>
             </form>
           </div>
         </div>
@@ -1733,13 +1734,13 @@
               Оставьте заявку и получите особые условия договора + 2 бесплатные услуги
             </h5>
             <div class="stages__form-box">
-              <input name="phone" type="text" class="input-phone" required placeholder="+7 (___) ___-__-__">
+              <input name="phone" type="text" class="input-phone" required placeholder="+7(___) ___-__-__">
               <button class="button" type="submit">
                 Отправить
               </button>
-              <p class="policy">
+              <a href="https://seo.computer/policy.html" target="_blank" class="policy">
                 Отправляя данные, вы соглашаетесь с Политикой конфиденциальности
-              </p>
+              </a>
             </div>
           </form>
           <div class="stages__item">
@@ -1813,19 +1814,19 @@
             Просто отправьте заявку и наши специалисты начнут работу!
           </p>
           <form action="mail.php" method="post" class="form-five__form">
-            <input type="text" name="name" class="input-name" required placeholder="Ваше имя">
-            <input type="text" name="phone" class="input-phone" required placeholder="+7 (___) ___-__-__">
+            <input onkeypress="return /[a-z,а-я]/i.test(event.key)" type="text" name="name" class="input-name" required placeholder="Ваше имя">
+            <input type="text" name="phone" class="input-phone" required placeholder="+7(___) ___-__-__">
             <button class="button" type="submit">
               Отправить
             </button>
-            <p class="policy">
+            <a href="https://seo.computer/policy.html" target="_blank" class="policy">
               Отправляя данные, вы соглашаетесь с Политикой конфиденциальности
-            </p>
+            </a>
           </form>
         </div>
       </div>
     </section>
-    <section class="reviews">
+    <section class="reviews" id="reviews">
       <div class="container">
         <h2 class="reviews__title">
           Отзывы о настройке рекламы  Яндекс Директ в Петропавловск камчатском
@@ -1898,7 +1899,7 @@
         </ul>
       </div>
     </section>
-    <section class="answer">
+    <section class="answer" id="answer">
       <div class="container">
         <h2 class="answer__title">
           Ответы на популярные вопросы
@@ -1945,27 +1946,32 @@
     </section>
     <section class="form-six">
       <div class="container">
-        <h2 class="form-six__title">
-          Остались вопросы по поводу рекламы Яндекс Директ или работы с нами?
-        </h2>
-        <h5 class="form-six__subtitle">
-          Наши специалисты ответят на все ваши вопросы!
-        </h5>
-        <p class="form-six__text">
-          Оставьте свой номер телефона и мы скоро с вами свяжемся для консультирования!
-        </p>
-        <form action="mail.php" method="post" class="form-six__form">
-          <input type="text" name="phone" class="input-phone" required placeholder="+7 (___) ___-__-__">
-          <button class="button" type="submit">
-            Отправить
-          </button>
-          <p class="policy">
-            Отправляя данные, вы соглашаетесь с Политикой конфиденциальности
-          </p>
-        </form>
+        <div class="form-six__inner">
+          <div class="form-six__content">
+            <h2 class="form-six__title">
+              Остались вопросы по поводу рекламы Яндекс Директ или работы с нами?
+            </h2>
+            <h5 class="form-six__subtitle">
+              Наши специалисты ответят на все ваши вопросы!
+            </h5>
+            <p class="form-six__text">
+              Оставьте свой номер телефона и мы скоро с вами свяжемся для консультирования!
+            </p>
+            <form action="mail.php" method="post" class="form-six__form">
+              <input type="text" name="phone" class="input-phone" required placeholder="+7(___) ___-__-__">
+              <button class="button" type="submit">
+                Отправить
+              </button>
+              <a href="https://seo.computer/policy.html" target="_blank" class="policy">
+                Отправляя данные, вы соглашаетесь с Политикой конфиденциальности
+              </a>
+            </form>
+          </div>
+          <img src="images/form-six.svg" alt="">
+        </div>
       </div>
     </section>
-    <section class="instructions">
+    <section class="instructions" id="instructions">
       <div class="container">
         <h2 class="instructions__title">
           Пошаговая инструкция по настройке рекламы Яндекс Директ в Петропавловск камчатском
@@ -1977,70 +1983,126 @@
           <div class="instructions__lists">
             <ul class="instructions__list">
               <li class="instructions__item">
-                Раздел 1. Подготовка к настройке рекламных кампаний Яндекс Директ
+                <a class="instructions__list-link" href="#unitOne">
+                  Раздел 1. Подготовка к настройке рекламных кампаний Яндекс Директ
+                </a>
               </li>
               <li class="instructions__item">
-                Этап 1. Создание аккаунта Яндекс Директ для настройки контекстной рекламы 
+                <a class="instructions__list-link" href="#unitOneStepOne">
+                  Этап 1. Создание аккаунта Яндекс Директ для настройки контекстной рекламы 
+                </a>
               </li>
               <li class="instructions__item">
-                Этап 2. Подбор ключевых слов для настройки рекламы Яндекс Директ 
+                <a class="instructions__list-link" href="#unitOneStepTwo">
+                  Этап 2. Подбор ключевых слов для настройки рекламы Яндекс Директ 
+                </a>
               </li>
               <li class="instructions__item">
-                Этап 3. Создание счетчика Яндекс Метрика для настройки рекламы Яндекс Директ 
-              </li>
-            </ul>
-            <ul class="instructions__list">
-              <li class="instructions__item">
-                Раздел 2. Пошаговая настройка рекламы в поиске Яндекс Директ 
-              </li>
-              <li class="instructions__item">
-                Этап 1. Настройка рекламы в Поиске Яндекс Директ 
-              </li>
-              <li class="instructions__item">
-                Этап 2. Настройка аудитории Яндекс Директ
-              </li>
-              <li class="instructions__item">
-                Этап 3. Добавление рекламных объявлений для рекламы в поиске Яндекс Директ 
-              </li>
-              <li class="instructions__item">
-                Этап 4. Модерация рекламы в поиске Яндекс Директ 
+                <a class="instructions__list-link" href="#unitOneStepThree">
+                  Этап 3. Создание счетчика Яндекс Метрика для настройки рекламы Яндекс Директ 
+                </a>
               </li>
             </ul>
             <ul class="instructions__list">
               <li class="instructions__item">
-                Раздел 3. Пошаговая настройка рекламы РСЯ&nbsp;Яндекс Директ
+                <a class="instructions__list-link" href="#unitTwo">
+                  Раздел 2. Пошаговая настройка рекламы в поиске Яндекс Директ 
+                </a>
+                
               </li>
               <li class="instructions__item">
-                Этап 1. Настройка рекламы РСЯ Яндекс Директ 
+                <a class="instructions__list-link" href="#unitTwoStepOne">
+                  Этап 1. Настройка рекламы в Поиске Яндекс Директ 
+                </a>
+                
               </li>
               <li class="instructions__item">
-                Этап 2. Настройка аудитории РСЯ Яндекс Директ 
+                <a class="instructions__list-link" href="#unitTwoStepTwo">
+                  Этап 2. Настройка аудитории Яндекс Директ
+                </a>
+                
               </li>
               <li class="instructions__item">
-                Этап 3. Добавление рекламных объявлений для рекламы в РСЯ Яндекс Директ 
+                <a class="instructions__list-link" href="#unitTwoStepThree">
+                  Этап 3. Добавление рекламных объявлений для рекламы в поиске Яндекс Директ 
+                </a>
+                
               </li>
               <li class="instructions__item">
-                Этап 4. Модерация объявлений РСЯ Яндекс Директ 
+                <a class="instructions__list-link" href="#unitTwoStepFour">
+                  Этап 4. Модерация рекламы в поиске Яндекс Директ 
+                </a>
+                
               </li>
             </ul>
             <ul class="instructions__list">
               <li class="instructions__item">
-                Раздел 4. Пошаговая настройка рекламы ретаргетинга Яндекс Директ 
+                <a class="instructions__list-link" href="#unitThree">
+                  Раздел 3. Пошаговая настройка рекламы РСЯ&nbsp;Яндекс Директ
+                </a>
+                
               </li>
               <li class="instructions__item">
-                Этап 1. Создание сегментов для Ретаргетинга Яндекс Директ 
+                <a class="instructions__list-link" href="#unitThreeStepOne">
+                  Этап 1. Настройка рекламы РСЯ Яндекс Директ
+                </a>
+                
               </li>
               <li class="instructions__item">
-                Этап 2. Настройка рекламы Ретаргетинга Яндекс Директ 
+                <a class="instructions__list-link" href="#unitThreeStepTwo">
+                  Этап 2. Настройка аудитории РСЯ Яндекс Директ
+                </a>
+                 
               </li>
               <li class="instructions__item">
-                Этап 3. Настройка аудитории Ретаргетинга Яндекс Директ 
+                <a class="instructions__list-link" href="#unitThreeStepThree">
+                  Этап 3. Добавление рекламных объявлений для рекламы в РСЯ Яндекс Директ
+                </a>
+                
               </li>
               <li class="instructions__item">
-                Этап 4. Добавление рекламных объявлений для Ретаргетинга Яндекс Директ
+                <a class="instructions__list-link" href="#unitThreeStepFour">
+                  Этап 4. Модерация объявлений РСЯ Яндекс Директ 
+                </a>
+                
+              </li>
+            </ul>
+            <ul class="instructions__list">
+              <li class="instructions__item">
+                <a class="instructions__list-link" href="#unitFour">
+                  Раздел 4. Пошаговая настройка рекламы ретаргетинга Яндекс Директ 
+                </a>
+                
               </li>
               <li class="instructions__item">
-                Этап 5. Модерация объявлений Ретаргетинга Яндекс директ 
+                <a class="instructions__list-link" href="#unitFourStepOne">
+                  Этап 1. Создание сегментов для Ретаргетинга Яндекс Директ 
+                </a>
+                
+              </li>
+              <li class="instructions__item">
+                <a class="instructions__list-link" href="#unitFourStepTwo">
+                  Этап 2. Настройка рекламы Ретаргетинга Яндекс Директ 
+                </a>
+                
+              </li>
+              <li class="instructions__item">
+                <a class="instructions__list-link" href="#unitFourStepThree">
+                  Этап 3. Настройка аудитории Ретаргетинга Яндекс Директ 
+                </a>
+                
+              </li>
+              <li class="instructions__item">
+                <a class="instructions__list-link" href="#unitFourStepFour">
+                  Этап 4. Добавление рекламных объявлений для Ретаргетинга Яндекс Директ
+                </a>
+                
+              </li>
+              <li class="instructions__item">
+                <a class="instructions__list-link" href="#unitFourStepFive">
+                  Этап 5. Модерация объявлений Ретаргетинга Яндекс директ 
+                </a>
+                
               </li>
             </ul>
           </div>
@@ -2049,14 +2111,14 @@
             <p class="instructions__text">
               Если вы не интересуетесь самостоятельной настройкой рекламы, закажите настройку у профессионального агентства!
             </p>
-            <a href="#" class="instructions__link">
+            <a href="#price" class="instructions__link">
               Перейти к тарифам
             </a>
           </div>
         </div>
       </div>
     </section>
-    <section class="unit-one">
+    <section class="unit-one" id="unitOne">
       <div class="container">
         <h2 class="unit-one__unit">
           Раздел 1.
@@ -2067,7 +2129,7 @@
         <img src="images/unit-one.svg" alt="" class="unit-one__img">
         
       </div>
-      <div class="unit-one__step-one">
+      <div class="unit-one__step-one" id="unitOneStepOne">
         <div class="container">
           <div class="unit-one__step-one-content step-content">
             <h2>
@@ -2103,7 +2165,7 @@
           </div>
         </div>
       </div>
-      <div class="unit-one__step-two">
+      <div class="unit-one__step-two" id="unitOneStepTwo">
         <div class="container">
           <div class="unit-one__step-two-content step-content">
             <h2>
@@ -2161,7 +2223,7 @@
           </div>
         </div>
       </div>
-      <div class="unit-one__step-three">
+      <div class="unit-one__step-three" id="unitOneStepThree">
         <div class="container">
           <div class="unit-one__step-three-content step-content">
             <h2>Этап 3</h2>
@@ -2204,7 +2266,7 @@
         </div>
       </div>
     </section>
-    <section class="unit-two">
+    <section class="unit-two" id="unitTwo">
       <div class="container">
         <div class="unit-two__inner">
           <h2 class="unit-two__unit">
@@ -2223,7 +2285,7 @@
         </div>
 
       </div>
-      <div class="unit-two__step-one">
+      <div class="unit-two__step-one" id="unitTwoStepOne">
         <div class="container">
           <div class="step-content">
             <h2>
@@ -2304,7 +2366,7 @@
           </div>
         </div>
       </div>
-      <div class="unit-two__step-two">
+      <div class="unit-two__step-two" id="unitTwoStepTwo">
         <div class="container">
           <div class="step-content">
             <h2>
@@ -2334,7 +2396,7 @@
           </div>
         </div>
       </div>
-      <div class="unit-two__step-three">
+      <div class="unit-two__step-three" id="unitTwoStepThree">
         <div class="container">
           <div class="step-content">
             <h2>Этап 3</h2>
@@ -2376,7 +2438,7 @@ utm-метка, отображаемая ссылка, дополнения. м�
           </div>
         </div>
       </div>
-      <div class="unit-two__step-four">
+      <div class="unit-two__step-four" id="unitTwoStepFour">
         <div class="container">
           <div class="step-content">
             <h2>Этап 4.</h2>
@@ -2398,7 +2460,7 @@ utm-метка, отображаемая ссылка, дополнения. м�
         </div>
       </div>
     </section>
-    <section class="unit-three">
+    <section class="unit-three" id="unitThree">
       <div class="container">
         <div class="unit-three__inner">
           <h2 class="unit-three__unit">
@@ -2416,7 +2478,7 @@ utm-метка, отображаемая ссылка, дополнения. м�
           </p>
         </div>
       </div>
-      <div class="unit-three__step-one">
+      <div class="unit-three__step-one" id="unitThreeStepOne">
         <div class="container">
           <div class="step-content">
             <h2>Этап 1</h2>
@@ -2493,7 +2555,7 @@ utm-метка, отображаемая ссылка, дополнения. м�
           </div>
         </div>
       </div>
-      <div class="unit-three__step-two">
+      <div class="unit-three__step-two" id="unitThreeStepTwo">
         <div class="container">
           <div class="step-content">
             <h2>Этап 2</h2>
@@ -2517,7 +2579,7 @@ utm-метка, отображаемая ссылка, дополнения. м�
           </div>
         </div>
       </div>
-      <div class="unit-three__step-three">
+      <div class="unit-three__step-three" id="unitThreeStepThree">
         <div class="container">
           <div class="step-content">
             <h2>Этап 3</h2>
@@ -2563,7 +2625,7 @@ utm-метка, отображаемая ссылка, дополнения. м�
           </div>
         </div>
       </div>
-      <div class="unit-three__step-four">
+      <div class="unit-three__step-four" id="unitThreeStepFour">
         <div class="container">
           <div class="step-content">
             <h2>Этап 4</h2>
@@ -2582,7 +2644,7 @@ utm-метка, отображаемая ссылка, дополнения. м�
         </div>
       </div>
     </section>
-    <section class="unit-four">
+    <section class="unit-four" id="unitFour">
       <div class="container">
         <div class="unit-four__inner">
           <h2 class="unit-four__unit">
@@ -2600,7 +2662,7 @@ utm-метка, отображаемая ссылка, дополнения. м�
           </p>
         </div>
       </div>
-      <div class="unit-four__step-one">
+      <div class="unit-four__step-one" id="unitFourStepOne">
         <div class="container">
           <div class="step-content">
             <h2>Этап 1</h2>
@@ -2626,7 +2688,7 @@ utm-метка, отображаемая ссылка, дополнения. м�
           </div>
         </div>
       </div>
-      <div class="unit-four__step-two">
+      <div class="unit-four__step-two" id="unitFourStepTwo">
         <div class="container">
           <div class="step-content">
             <h2>
@@ -2681,7 +2743,7 @@ utm-метка, отображаемая ссылка, дополнения. м�
           </div>
         </div>
       </div>
-      <div class="unit-four__step-three">
+      <div class="unit-four__step-three" id="unitFourStepThree">
         <div class="container">
           <div class="step-content">
             <h2>Этап 3</h2>
@@ -2705,7 +2767,7 @@ utm-метка, отображаемая ссылка, дополнения. м�
           </div>
         </div>
       </div>
-      <div class="unit-four__step-four">
+      <div class="unit-four__step-four" id="unitFourStepFour">
         <div class="container">
           <div class="step-content">
             <h2>Этап 4</h2>
@@ -2735,7 +2797,7 @@ utm-метка, отображаемая ссылка, дополнения. м�
           </div>
         </div>
       </div>
-      <div class="unit-four__step-five">
+      <div class="unit-four__step-five" id="unitFourStepFive">
         <div class="container">
           <div class="step-content">
             <h2>Этап 5</h2>
@@ -2753,7 +2815,7 @@ utm-метка, отображаемая ссылка, дополнения. м�
     <section class="application">
       <div class="container">
         <h2 class="application__title">
-          Скачайте приложение Директ Коммандер для удобного управления рекламой 
+          Скачайте приложение Директ Коммандер для удобного управления рекламой на официальном сайте Яндекс
         </h2>
         <div class="application__inner">
           <div class="application__content">
@@ -2774,9 +2836,6 @@ utm-метка, отображаемая ссылка, дополнения. м�
                 Загружайте объявления и фразы в табличных форматах
               </li>
             </ul>
-            <a href="#" class="application__link">
-              Скачать на свой ПК
-            </a>
           </div>
           <img class="application__img" src="images/app.png" alt="">
         </div>
@@ -2791,18 +2850,18 @@ utm-метка, отображаемая ссылка, дополнения. м�
           <nav class="footer__menu">
             <ul class="footer__menu-list">
               <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link">
+                <a href="#services" class="footer__menu-link">
                   Доп. услуги
                 </a>
-                <a href="#" class="footer__menu-link">
+                <a href="#price" class="footer__menu-link">
                   Тарифы
                 </a>
               </li>
               <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link">
+                <a href="#reviews" class="footer__menu-link">
                   Отзывы
                 </a>
-                <a href="#" class="footer__menu-link">
+                <a href="#answer" class="footer__menu-link">
                   FAQ
                 </a>
               </li>
@@ -2810,15 +2869,15 @@ utm-метка, отображаемая ссылка, дополнения. м�
                 <a href="#" class="footer__menu-link">
                   Калькулятор
                 </a>
-                <a href="#" class="footer__menu-link">
+                <a href="#promo" class="footer__menu-link">
                   Акции
                 </a>
               </li>
               <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link">
+                <a href="#advance" class="footer__menu-link">
                   Портфолио
                 </a>
-                <a href="#" class="footer__menu-link">
+                <a href="#instructions" class="footer__menu-link">
                   Директ самостоятельно
                 </a>
               </li>
@@ -2831,7 +2890,7 @@ utm-метка, отображаемая ссылка, дополнения. м�
             </span>
           </div>
         </div>
-        <a href="#" class="footer__policy">
+        <a href="https://seo.computer/policy.html" target="_blank" class="footer__policy">
           Политика конфиденциальности
         </a>
         <p class="footer__copy">
@@ -2839,8 +2898,34 @@ utm-метка, отображаемая ссылка, дополнения. м�
         </p>
       </div>
     </footer>
+    <div class="popup-close"></div>
+    <div class="popup">
+      <div class="popup__inner">
+        <div class="popup__top">
+          <h5 class="popup__text">
+            Оставьте заявку
+          </h5>
+          <img src="images/icons/close.svg" alt="" class="popup__close">
+        </div>
+        <img class="popup__image" src="images/form-two.png" alt="">
+        <h6 class="popup__title">
+          Оставьте заявку и наш директолог скоро с вами свяжется
+        </h6>
+        <form method="post" action="mail.php" class="popup__form">
+          <input onkeypress="return /[a-z,а-я]/i.test(event.key)" name="name" type="text" class="input-name" required placeholder="Ваше имя">
+          <input name="phone" type="text" class="input-phone" required placeholder="+7(___) ___-__-__">
+          <button class="button" type="submit">
+            Отправить
+          </button>
+          <a href="https://seo.computer/policy.html" target="_blank" class="policy">
+            Отправляя данные, вы соглашаетесь с Политикой конфиденциальности
+          </a>
+        </form>
+      </div>
+    </div>
   </div>
   <script src="js/main.min.js"></script>
+  <script src="js/jquery.quiz.js"></script>
 </body>
 
 </html>
