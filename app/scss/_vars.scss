@@ -16,20 +16,7 @@ $bl: #F0F6FF;
   }
 }
 
-%red-400{
-  font-family: 'Red Hat Display', sans-serif;
-  font-weight: 400;
-}
 
-%ub-400{
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 400;
-}
-
-%ub-700{
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 700;
-}
 
 
 @mixin bgp($url, $s, $pos1, $pos2 ) {
@@ -77,16 +64,17 @@ $bl: #F0F6FF;
 };
 
 
-@mixin font ($name,$w, $url1, $url2) {
-  font-family: $name;
-  font-weight: $w;
-  font-style: normal;
-  src: local($name),
-  url($url1) format('woff2'),
-  url($url2) format('woff');
-  font-display: swap;
+@mixin font ($name, $w, $url1, $url2) {
+  @font-face{
+    font-family: $name;
+    font-weight: $w;
+    font-style: normal;
+    src: local($name),
+    url($url1) format('woff2'),
+    url($url2) format('woff');
+    font-display: swap;
+  }
 }
-
 
 %link{
   background-color: $accent;
@@ -98,4 +86,19 @@ $bl: #F0F6FF;
   line-height: 23px;
   @extend %ub-700;
   border-radius: 30px;
+}
+
+%red-400{
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 400;
+}
+
+%ub-400{
+  font-family: 'Ubuntu-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%ub-700{
+  font-family: 'Ubuntu-Bold', sans-serif;
+  font-weight: 700;
 }

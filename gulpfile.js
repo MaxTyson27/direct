@@ -33,6 +33,7 @@ function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/inputmask/dist/jquery.inputmask.js',
+    'node_modules/lazysizes/lazysizes.min.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))
